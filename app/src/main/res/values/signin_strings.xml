@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="SignIn_fieldLogin">Имя пользователя / E-Mail</string>
+    <string name="SignIn_fieldPassword">Пароль</string>
+    <string name="SignIn_buttonSignIn">Войти</string>
+    <string name="SignIn_rememberMe">Запомнить меня</string>
+
+
+    <string name="SignIn_loginEmpty">Поле логина не может быть пустым</string>
+    <string name="SignIn_passwordEmpty">Поле пароля не может быть пустым</string>
+    
+    <string name="SignIn_dialogTitle">Проверьте подключение к сети</string>
+    <string name="SignIn_dialogMessage">Отсутствует подключение к сети. Попытаться войти, использую
+        локальные данные?\n(Информация может отличаться от реальной)</string>
+    <string name="SignIn_dialogPositive">Войти</string>
+    <string name="SignIn_dialogNeutral">Повторить попытку</string>
+    <string name="SignIn_dialogNegative">Отмена</string>
+
+    <string name="SignIn_userNotFound">Данных об этом аккаунте не найдены</string>
+    
+    <string name="SignIn_error">Произовшла неизвестная ошабка</string>
+
+</resources>

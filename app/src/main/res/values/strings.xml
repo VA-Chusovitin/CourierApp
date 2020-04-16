@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">CourierApp</string>
+    <string name="logo_company">Logo Company</string>
+
+    <string name="dateFormat">dd.MM.yyyy HH:mm:ss</string>
+    <string name="timeZoneMoscow">Europe/Moscow</string>
+
+    <string name="success">success</string>
+    <string name="wrong">wrong</string>
+    <string name="idUser">idUser</string>
+    <string name="login">login</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="authorizationKey">authorizationKey</string>
+    <string name="lastConnection">lastConnection</string>
+    <string name="timestamp">timestamp</string>
+    <string name="authorization">authorization</string>
+
+    <string name="ok">OK</string>
+
+    <string name="unknownError">Unknown error</string>
+    <string name="emptyString"></string>
+</resources>
