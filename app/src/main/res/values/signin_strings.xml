@@ -8,6 +8,8 @@
 
     <string name="SignIn_loginEmpty">Поле логина не может быть пустым</string>
     <string name="SignIn_passwordEmpty">Поле пароля не может быть пустым</string>
+
+    <string name="SignIn_GPSResolution">Отсутствует разрешение на определение местоположения</string>
     
     <string name="SignIn_dialogTitle">Проверьте подключение к сети</string>
     <string name="SignIn_dialogMessage">Отсутствует подключение к сети. Попытаться войти, использую

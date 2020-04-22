@@ -2,9 +2,12 @@ package com.example.courierapp;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.text.Editable;
@@ -104,6 +107,11 @@ public class SignIn extends AppCompatActivity implements View.OnClickListener, V
             return consumed;
         });
         buttonSignIn.setOnClickListener(this);
+
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) !=
+                PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(SignIn.this, new String[] {Manifest.permission.ACCESS_FINE_LOCATION}, 1);
+        }
     }
 
     /*@Override
@@ -115,7 +123,13 @@ public class SignIn extends AppCompatActivity implements View.OnClickListener, V
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.buttonSignIn:
-                signInAccount(login.getText().toString(), password.getText().toString());
+                if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) ==
+                        PackageManager.PERMISSION_GRANTED) {
+                    signInAccount(login.getText().toString(), password.getText().toString());
+                } else {
+                    Toast.makeText(getApplicationContext(),getString(R.string.SignIn_GPSResolution),
+                            Toast.LENGTH_LONG).show();
+                }
                 break;
         }
     }
